@@ -74,15 +74,24 @@ let demBoiz = [
 ];
 
 $(document).ready(function () {
-  demBoiz.forEach(function (boi) {
+  demBoiz.forEach(function (boi, index) {
+    let animation = new Promise (function (resolve, reject) {
+      if (index % 2 === 0) {
+        resolve('fadeInLeft');
+      } else {
+        resolve('fadeInRight');
+      }
+    });
 
-    addBoiToPage(boi);
+    animation.then(function (animation) {
+      addBoiToPage(boi, animation);
+    });
   });
 
-  function addBoiToPage (boi) {
+  function addBoiToPage (boi, animation) {
     let broCode = '\
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">\
-        <div class="welcome_part wow fadeInLeft">\
+        <div class="welcome_part wow ' + animation + '">\
           <div class="welcome_icon">\
             <img class="img-circle" height="100%" width="100%" src="http://graph.facebook.com/v2.5/'+ boi.fbId +'/picture?height=200&width=200">\
           </div>\
