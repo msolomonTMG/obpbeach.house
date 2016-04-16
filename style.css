@@ -10,11 +10,11 @@ body{
 	text-rendering: optimizelegibility;
 }
 
-a { 
-	color:#ffffff; text-decoration:none; 
+a {
+	color:#ffffff; text-decoration:none;
 }
-a:hover { 
-	color:#ffffff;text-decoration:none; 
+a:hover {
+	color:#ffffff;text-decoration:none;
 }
 a:focus {
 	color:#ffffff;
@@ -139,7 +139,7 @@ ul,ol         { list-style:none; }
 }
 
 .header_part{
-	background: url("images/background.jpg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
+	background: url("http://www.tripbadger.com/wp-content/uploads/2012/09/fire-island-beach.jpg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
 	overflow: hidden;
 }
 .navbar-default {
