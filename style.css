@@ -115,6 +115,9 @@ ul,ol         { list-style:none; }
 
 /* Site Header Part
 =====================================================================*/
+.start_part {
+	height: 100vh;
+}
 .overlay {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
 	height: 100%;
