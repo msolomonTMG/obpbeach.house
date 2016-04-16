@@ -1,6 +1,6 @@
 'use strict';
 
-let demBoiz = [
+var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
@@ -75,7 +75,7 @@ let demBoiz = [
 
 $(document).ready(function () {
   demBoiz.forEach(function (boi, index) {
-    let animation = new Promise (function (resolve, reject) {
+    var animation = new Promise (function (resolve, reject) {
       if (index % 2 === 0) {
         resolve('fadeInLeft');
       } else {
@@ -89,7 +89,7 @@ $(document).ready(function () {
   });
 
   function addBoiToPage (boi, animation) {
-    let broCode = '\
+    var broCode = '\
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">\
         <div class="welcome_part wow ' + animation + '">\
           <div class="welcome_icon">\
