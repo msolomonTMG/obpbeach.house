@@ -139,7 +139,7 @@ ul,ol         { list-style:none; }
 }
 
 .header_part{
-	background: url("images/background1.png") repeat scroll center center / cover  rgba(0, 0, 0, 0);
+	background: url("images/background.jpg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
 	overflow: hidden;
 }
 .navbar-default {
