@@ -244,10 +244,13 @@ ul,ol         { list-style:none; }
 	text-transform: uppercase;
 	text-align: center;
 }
-.welcome_part p{
+.welcome_part p, a{
 	color: #9c9c9c;
 	font-size: 14px;
 	text-align: center;
+}
+.welcome_part a:hover{
+	color: #59a3fc;
 }
 
 /* Email Subscribe Section
