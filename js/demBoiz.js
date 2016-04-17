@@ -4,6 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
+    "bio": "Testing"
     "social": [
       {
         "site": "instagram",
@@ -97,6 +98,7 @@ $(document).ready(function () {
           </div>\
           <h2>' + boi.name + '</h2>\
           <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
+          <p>boi.bio</p>
         </div>\
       </div>\
     ';
