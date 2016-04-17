@@ -97,8 +97,8 @@ $(document).ready(function () {
             <img class="img-circle" height="100%" width="100%" src="http://graph.facebook.com/v2.5/'+ boi.fbId +'/picture?height=200&width=200">\
           </div>\
           <h2>' + boi.name + '</h2>\
-          <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
-          <p>boi.bio</p>
+          <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>
+          <p>boi.bio</p>\
         </div>\
       </div>\
     ';
