@@ -4,7 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
-    "bio": "Testing"
+    "bio": "Testing",
     "social": [
       {
         "site": "instagram",
