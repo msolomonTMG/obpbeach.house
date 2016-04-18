@@ -4,6 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
+    "bio": "Testing",
     "social": [
       {
         "site": "instagram",
@@ -14,6 +15,7 @@ var demBoiz = [
   {
     "name": "Machiste",
     "fbId": 666455808,
+    "bio": "Testing",
     "social": [
       {
         "site": "instagram",
@@ -24,6 +26,7 @@ var demBoiz = [
   {
     "name": "Uncle Greg",
     "fbId": 1363290225,
+    "bio": "Testing",
     "social": [
       {
         "site": "twitter",
@@ -34,6 +37,7 @@ var demBoiz = [
   {
     "name": "Coach",
     "fbId": 705764484,
+    "bio": "Testing",
     "social": [
       {
         "site": "instagram",
@@ -44,6 +48,7 @@ var demBoiz = [
   {
     "name": "Croxley",
     "fbId": 533712842,
+    "bio": "Testing",
     "social": [
       {
         "site": "instagram",
@@ -54,6 +59,7 @@ var demBoiz = [
   {
     "name": "Blush",
     "fbId": 637890096,
+    "bio": "Testing",
     "social": [
       {
         "site": "instagram",
@@ -64,6 +70,7 @@ var demBoiz = [
   {
     "name": "Nick",
     "fbId": 1235542852,
+    "bio": "Testing",
     "social": [
       {
         "site": "facebook",
@@ -97,6 +104,7 @@ $(document).ready(function () {
           </div>\
           <h2>' + boi.name + '</h2>\
           <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
+          <p> ' + boi.bio +' </p>
         </div>\
       </div>\
     ';
