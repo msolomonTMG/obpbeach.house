@@ -4,7 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
-    "bio": "Testing",
+    "bio": "Has broken more windows than all other members combined",
     "social": [
       {
         "site": "instagram",
@@ -15,7 +15,7 @@ var demBoiz = [
   {
     "name": "Machiste",
     "fbId": 666455808,
-    "bio": "Testing",
+    "bio": "Owns the record for most Finleys' Revenges consumed in one night, with Eight.",
     "social": [
       {
         "site": "instagram",
@@ -26,7 +26,7 @@ var demBoiz = [
   {
     "name": "Uncle Greg",
     "fbId": 1363290225,
-    "bio": "Testing",
+    "bio": "In Uncle Greg's last beach house residency, he took full advantage; sleeping for a grand total of 35 minutes for the entire week.",
     "social": [
       {
         "site": "twitter",
@@ -37,7 +37,7 @@ var demBoiz = [
   {
     "name": "Coach",
     "fbId": 705764484,
-    "bio": "Testing",
+    "bio": "As Republican as he is Angry, there's a good chance he's already fed up with your 'bullshit'",
     "social": [
       {
         "site": "instagram",
@@ -48,7 +48,7 @@ var demBoiz = [
   {
     "name": "Croxley",
     "fbId": 533712842,
-    "bio": "Testing",
+    "bio": "Young. Hot. Brash. With more covers in his first year than any male rookie model ever, and an attitude that says 'Who cares, it's only fashion'",
     "social": [
       {
         "site": "instagram",
@@ -59,7 +59,7 @@ var demBoiz = [
   {
     "name": "Blush",
     "fbId": 637890096,
-    "bio": "Testing",
+    "bio": "Diabetes hasn't stopped him yet; but it will soon enough",
     "social": [
       {
         "site": "instagram",
@@ -70,7 +70,7 @@ var demBoiz = [
   {
     "name": "Nick",
     "fbId": 1235542852,
-    "bio": "Testing",
+    "bio": "One half of Nictoria, Nick is the only person in the Beach House Boiz that believes in climate change",
     "social": [
       {
         "site": "facebook",
@@ -104,7 +104,7 @@ $(document).ready(function () {
           </div>\
           <h2>' + boi.name + '</h2>\
           <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
-          <p> ' + boi.bio +' </p>\
+          <p>' + boi.bio + '</p>\
         </div>\
       </div>\
     ';
