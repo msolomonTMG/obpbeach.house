@@ -41,7 +41,7 @@ var demBoiz = [
       }
     ]
   },
-  {
+ /* {
     "name": "Croxley",
     "fbId": 533712842,
     "social": [
@@ -50,7 +50,7 @@ var demBoiz = [
         "user": "corymeyers"
       }
     ]
-  },
+  },*/
   {
     "name": "Blush",
     "fbId": 637890096,
