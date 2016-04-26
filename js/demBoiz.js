@@ -93,7 +93,7 @@ $(document).ready(function () {
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">\
         <div class="welcome_part wow ' + animation + '">\
           <div class="welcome_icon">\
-            <img class="img-circle" height="100%" width="100%" src="http://graph.facebook.com/v2.5/'+ boi.fbId +'/picture?height=200&width=200">\
+             <a href="http://www.facebook.com/' + boi.fbId + '"><img class="img-circle" height="100%" width="100%" src="http://graph.facebook.com/v2.5/'+ boi.fbId +'/picture?height=200&width=200"></a>\
           </div>\
           <h2>' + boi.name + '</h2>\
           <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
