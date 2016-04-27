@@ -27,6 +27,20 @@ $(document).ready( function() {
  new WOW().init();
 
 /* ==============================================
+	For smooth anchor scrolling
+=====================================================================*/
+ $('a[href^="#"]').on('click',function (e) {
+     e.preventDefault();
+
+     var target = this.hash;
+     var $target = $(target);
+
+     $('html, body').stop().animate({
+         'scrollTop': $target.offset().top
+     }, 750, 'swing');
+ });
+
+/* ==============================================
 	For Fixed Menu.
 =====================================================================*/
 var s = $("#stick_menu");
