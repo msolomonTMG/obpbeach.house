@@ -62,7 +62,7 @@ var demBoiz = [
     ]
   },
   {
-    "name": "Nick",
+    "name": "Nicktoria",
     "fbId": 1235542852,
     "social": [
       {
