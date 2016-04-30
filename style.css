@@ -277,6 +277,9 @@ ul,ol         { list-style:none; }
 	margin-bottom: 80px;
 	text-align: center;
 }
+.email_subscribe_form_part .fa{
+	color: #59a3fc;
+}
 .email_input_box{
 	background: none repeat scroll 0 0 #fff;
 	border-radius: 30px;
