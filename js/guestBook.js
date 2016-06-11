@@ -6,6 +6,12 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $('#show-all-button').on("click", function(event) {
+    $('.timeline-item').css("display", "block");
+    $(this).hide();
+    event.preventDefault();
+  })
+
   initializeGuestBook();
 });
 
@@ -14,7 +20,7 @@ function initializeGuestBook() {
   // if another post gets added, this code gets fired
   // we also fire it for each post on initial retrieval
   // TODO: give users the ability to delete their own posts and update that in real time
-  
+
   var posts = firebase.database().ref('posts');
   posts.on('child_added', function(post) {
     var postData = {
@@ -39,7 +45,7 @@ function initializeGuestBook() {
     }
 
     var postHTML = '\
-      <li class="timeline-inverted">\
+      <li class="timeline-item timeline-inverted">\
         <div class="timeline-badge"><i class="fa fa-comment-o fa-flip-horizontal" aria-hidden="true"></i></div>\
         <div class="timeline-panel">\
           <div class="timeline-heading">\

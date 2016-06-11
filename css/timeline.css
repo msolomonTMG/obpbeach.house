@@ -4,6 +4,25 @@
   position: relative;
 }
 
+#guest_book_posts {
+  transform: rotate(180deg);
+}
+#guest_book_posts > li {
+  transform: rotate(-180deg);
+}
+
+#guest_book_posts > li:nth-last-of-type(-n+4) {
+  display: block;
+}
+
+.timeline-item {
+  display: none;
+}
+
+#login-button-section {
+  margin-bottom: 10px;
+}
+
 .timeline:before {
   top: 0;
   bottom: 0;

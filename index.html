@@ -98,29 +98,38 @@
     <div class="container">
       <div class="section-title">
         <h2>Guest Book</h2>
-        <p>Sign the guest book. Go nuts.</p>
+        <p>Tell us anything. Go nuts.</p>
       </div>
-      <ul id="guest_book_posts" class="timeline">
-      </ul>
-      <!-- Test login -->
-      <p>Welcome: <span id="name"></span></p>
-      <a href="/logout.html">Logout</a>
 
-      <div class="page-header">
-        <h2 id="timeline">Sign Guest Book</h2>
-      </div>
-      <form id="guest_book_form">
-        <input type="text" id="post_display_name" name="displayName" class="form-control form-group wow fadeInUp" placeholder="Name" required disabled/>
-        <textarea id="post_message" name="message" rows="5" cols="30" class="form-control form-group wow fadeInUp" placeholder="Message" required disabled></textarea>
-        <div id="sign-guest-book-button-section" style="display:none;">
-          <button id="guestBookSubmit" type="button" class="btn btn-primary post_button wow fadeInUp"> <i class="fa fa-pencil"></i>  Sign Guest Book</button>
+      <div class="col-sm-8 col-sm-offset-2">
+        <!-- Logged out users -->
+        <div id="login-button-section" class="row">
+          <div class="col-xs-12">
+            <button id="btn-login" type="submit" class="btn btn-login btn-large btn-primary">Login to Post</button>
+          </div>
         </div>
-      </form>
+        <!-- Test login -->
+        <!-- <p>Welcome: <span id="name"></span></p>
+        <a href="/logout.html">Logout</a> -->
 
-      <!-- Logged out users -->
-      <div id="login-button-section" class="row">
-        <div class="col-xs-12 text-center">
-          <button id="btn-login" style="display: block; width: 100%;" type="submit" class="btn btn-login btn-large btn-primary">Login to Post</button>
+        <form id="guest_book_form">
+          <input type="text" id="post_display_name" name="displayName" class="form-control form-group wow fadeInUp" placeholder="Name" required disabled/>
+          <textarea id="post_message" name="message" rows="5" cols="30" class="form-control form-group wow fadeInUp" placeholder="Message" required disabled></textarea>
+          <div id="sign-guest-book-button-section" style="display:none;">
+            <button id="guestBookSubmit" type="button" class="btn btn-primary post_button wow fadeInUp"> <i class="fa fa-pencil"></i>  Sign Guest Book</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-sm-12">
+        <!-- Posts -->
+        <ul id="guest_book_posts" class="timeline">
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <button id="show-all-button" style="display: block; width: 100%;" type="button" class="btn btn-login btn-large btn-primary">See All</button>
         </div>
       </div>
     </div>
