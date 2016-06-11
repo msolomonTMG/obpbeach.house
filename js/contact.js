@@ -8,31 +8,28 @@ $(document).ready(function() {
 });
 
 function sendMessage() {
-  const HMU_URL = 'http://api.hmu.cool/messages/84607fe0966ef30808b68049f0e049d1';
+  var HMU_URL = 'http://api.hmu.cool/messages/84607fe0966ef30808b68049f0e049d1';
 
-  let email   = $('#contact_email').val();
-  let subject = $('#contact_subject').val();
-  let message = $('#contact_text').val();
+  var email   = $('#contact_email').val();
+  var subject = $('#contact_subject').val();
+  var message = $('#contact_text').val();
 
-  fetch(HMU_URL, {
-    method: 'POST',
-    headers: new Headers({
-      'Content-Type': 'application/json'
-    }),
-    body: JSON.stringify({
-      email: email,
-      fields: {
-        subject: subject,
-        message: message
-      }
-    })
-  }).then(function (response) {
-    if (response.ok) {
-      showConfirmation({successful:true});
-    } else {
-      showConfirmation({successful:false});
+  var data = {
+    email: email,
+    fields: {
+      subject: subject,
+      message: message
     }
-  })
+  }
+
+  $.post(HMU_URL, data)
+    .done(function(response) {
+      if (response.ok) {
+        showConfirmation({successful:true});
+      } else {
+        showConfirmation({successful:false});
+      }
+  });
 }
 
 function showConfirmation(result) {
