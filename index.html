@@ -10,7 +10,9 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#59a3fc">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Setting the right viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>OBP Beach House</title>
 	   <!--Core CSS -->
 	  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -19,6 +21,8 @@
 	  <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet">
+    <!-- Timeline -->
+    <link href="css/timeline.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon">
@@ -71,6 +75,7 @@
 										<div id="menu-center">
 											<ul class="nav navbar-nav navbar-right mainnav">
 												<li><a href="#header_part" >Countdown</a></li>
+                        <li><a href="#guest_book_section">Guest Book</a></li>
 												<li><a href="#welcome_section">Dem Boiz</a></li>
 												<li><a href="#email_subscribe_section">Feedz</a></li>
 												<li><a href="#contact_section">Contact</a></li>
@@ -88,6 +93,39 @@
 		</div>
 	</header>
   <!-- Header Section End -->
+  <!-- Guest Book -->
+  <section id="guest_book_section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Guest Book</h2>
+        <p>Sign the guest book. Go nuts.</p>
+      </div>
+      <ul id="guest_book_posts" class="timeline">
+      </ul>
+      <!-- Test login -->
+      <p>Welcome: <span id="name"></span></p>
+      <a href="/logout.html">Logout</a>
+
+      <div class="page-header">
+        <h2 id="timeline">Sign Guest Book</h2>
+      </div>
+      <form id="guest_book_form">
+        <input type="text" id="post_display_name" name="displayName" class="form-control form-group wow fadeInUp" placeholder="Name" required disabled/>
+        <textarea id="post_message" name="message" rows="5" cols="30" class="form-control form-group wow fadeInUp" placeholder="Message" required disabled></textarea>
+        <div id="sign-guest-book-button-section" style="display:none;">
+          <button id="guestBookSubmit" type="button" class="btn btn-primary post_button wow fadeInUp"> <i class="fa fa-pencil"></i>  Sign Guest Book</button>
+        </div>
+      </form>
+
+      <!-- Logged out users -->
+      <div id="login-button-section" class="row">
+        <div class="col-xs-12 text-center">
+          <button id="btn-login" style="display: block; width: 100%;" type="submit" class="btn btn-login btn-large btn-primary">Login to Post</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About Section Start -->
 	<section id="welcome_section">
 		<div class="welcome_section">
@@ -211,51 +249,12 @@
 			</div>
 		</div>
 	</section>
-  <!--
-	<section id="contact_section">
-		<div class="contact_section">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-  					<div class="row">
-  						<div class="section-title">
-  							<h2>Contact the Boiz</h2>
-  							<p>Beach House Boiz, 2016</p>
-  						</div>
-  					</div>
-            <div class="row">
-              <form class="form-inline" role="form">
-                <div class="form-group">
-                  <label class="sr-only" for="email">Email address:</label>
-                  <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group">
-                  <label class="sr-only" for="pwd">Password:</label>
-                  <input type="password" class="form-control" id="pwd">
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
-            </div>
-            <div class="row">
-              <div class="col-xs-6 text-center">
-                <a href="mailto:beachhouseboiz@obpbeach.house"><i class="fa fa-send"></i> beachhouseboiz@obpbeach.house</a>
-              </div>
-              <div class="col-xs-6 text-center">
-                <a href="https://www.facebook.com/groups/1647208125545585/"><i class="fa fa-facebook"></i> group page</a>
-              </div>
-            </div>
-					</div>
-				</div>
-        <div class="clear-fix"></div>
-			</div>
-			</div>
-		</div>
-	</section>
--->
-  <!-- Contact Section End -->
+
+   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+   <script src="js/firebase.js"></script>
+   <!-- Auth0Lock script -->
+   <script src="//cdn.auth0.com/js/lock-9.1.min.js"></script>
+   <script src="js/auth0.js"></script>
    <!--Core js-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -265,6 +264,7 @@
 	<!--common script init for all pages-->
     <script src="js/script.js"></script>
     <script src="js/demBoiz.js"></script>
+    <script src="js/guestBook.js"></script>
     <script src="js/contact.js"></script>
     <!-- Google Analytics -->
     <script>
