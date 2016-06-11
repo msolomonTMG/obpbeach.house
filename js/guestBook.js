@@ -13,6 +13,8 @@ function initializeGuestBook() {
   // this sets up a real-time retrieval of guest book posts
   // if another post gets added, this code gets fired
   // we also fire it for each post on initial retrieval
+  // TODO: give users the ability to delete their own posts and update that in real time
+  
   var posts = firebase.database().ref('posts');
   posts.on('child_added', function(post) {
     var postData = {
