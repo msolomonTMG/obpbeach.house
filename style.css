@@ -306,7 +306,7 @@ ul,ol         { list-style:none; }
 /* Guest Book Section 
 =====================================================================*/
 .guest_book_section{
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 /* Contact Section
