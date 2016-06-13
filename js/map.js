@@ -115,6 +115,7 @@ function getCheckInLocation() {
     center: {lat: 40.6463044, lng: -73.1608573},
     zoom: 15
   });
+  var infoWindow = new google.maps.InfoWindow({map: map});
 
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
@@ -124,7 +125,6 @@ function getCheckInLocation() {
         lng: position.coords.longitude
       };
 
-      var infoWindow = new google.maps.InfoWindow({map: map});
       infoWindow.setPosition(pos);
       infoWindow.setContent('Check In Here');
       map.setCenter(pos);
