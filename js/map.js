@@ -129,16 +129,17 @@ function getCheckInLocation() {
       infoWindow.setContent('Check In Here');
       map.setCenter(pos);
       $('#checkinSubmit').removeClass('disabled');
-    }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
+    }, function(err) {
+      handleLocationError(true, infoWindow, map.getCenter(), err);
     });
   } else {
     // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
+    handleLocationError(false, infoWindow, map.getCenter(), err);
   }
 }
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+function handleLocationError(browserHasGeolocation, infoWindow, pos, err) {
+  console.log(err);
   infoWindow.setPosition(pos);
   infoWindow.setContent(browserHasGeolocation ?
                         'Error: The Geolocation service failed.' :
