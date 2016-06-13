@@ -303,6 +303,11 @@ ul,ol         { list-style:none; }
   outline-offset: -2px;
 }
 
+/* Guest Book Section 
+=====================================================================*/
+.guest_book_section{
+	padding 100px;
+}
 
 /* Contact Section
 =====================================================================*/
