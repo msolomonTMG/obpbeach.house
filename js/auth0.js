@@ -28,6 +28,5 @@ if (id_token) {
     $('#login-button-section').hide();
     $('#sign-guest-book-button-section').show();
     $('.form-group').prop("disabled", false);
-    document.getElementById('name').textContent = profile.name;
   });
 }
