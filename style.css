@@ -212,6 +212,7 @@ ul,ol         { list-style:none; }
 =====================================================================*/
 .welcome_section{
 	overflow: hidden;
+	background: none repeat scroll 0 0 #ecf0f1;
 }
 .about{
 	margin: 0 auto;
@@ -253,6 +254,7 @@ ul,ol         { list-style:none; }
 .welcome_part a:hover{
 	color: #59a3fc;
 }
+
 
 /* Email Subscribe Section
 =====================================================================*/
@@ -301,6 +303,11 @@ ul,ol         { list-style:none; }
   outline-offset: -2px;
 }
 
+/* Guest Book Section 
+=====================================================================*/
+.guest_book_section{
+	padding-bottom: 50px;
+}
 
 /* Contact Section
 =====================================================================*/
