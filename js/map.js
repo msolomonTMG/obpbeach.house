@@ -38,7 +38,7 @@ function initMap() {
 function addPin(checkinData) {
   // the image of our markers
   var image = {
-    url: 'https://raw.githubusercontent.com/msolomonTMG/obpbeach.house/gh-pages/images/beachball.png',
+    url: 'https://raw.githubusercontent.com/msolomonTMG/obpbeach.house/map/images/beachball-32.png',
     size: new google.maps.Size(32, 32),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(0, 0)
@@ -115,7 +115,6 @@ function getCheckInLocation() {
     center: {lat: 40.6463044, lng: -73.1608573},
     zoom: 15
   });
-  var infoWindow = new google.maps.InfoWindow({map: map});
 
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
@@ -125,9 +124,11 @@ function getCheckInLocation() {
         lng: position.coords.longitude
       };
 
+      var infoWindow = new google.maps.InfoWindow({map: map});
       infoWindow.setPosition(pos);
-      infoWindow.setContent('Location found.');
+      infoWindow.setContent('Check In Here');
       map.setCenter(pos);
+      $('#checkinSubmit').removeClass('disabled');
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
