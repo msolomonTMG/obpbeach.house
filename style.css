@@ -254,6 +254,16 @@ ul,ol         { list-style:none; }
 	color: #59a3fc;
 }
 
+/* Guest Book Section
+====================================================================*/
+.guest_book_section{
+	background: none repeat scroll 0 0 #ecf0f1;
+	color: #000;
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+}
+
 /* Email Subscribe Section
 =====================================================================*/
 .email_subscribe_section{
