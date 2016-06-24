@@ -1,6 +1,8 @@
 var map;
 var markers = [];
 var pos = {};
+// If document (your website) is wider than 480px, isDraggable = true, else isDraggable = false
+var isDraggable = $(document).width() > 480 ? true : false;
 
 $("#checkinSubmit").on("click", function(event) {
   var title       = $('#checkin-title').val();
@@ -29,9 +31,16 @@ function initMap() {
     }
     addPin(checkinData);
   });
+
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 40.6463044, lng: -73.1608573},
-    zoom: 15
+    zoom: 15,
+    draggable: isDraggable,
+    scrollwheel: false,
+  });
+
+  map.addListener('click', function(event){
+    map.set('draggable', true);
   });
 }
 
