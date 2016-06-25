@@ -1,3 +1,12 @@
 #map {
   min-height: 40vh;
+  color: #000;
+}
+
+#map h1 {
+  color: #000;
+}
+
+#map p {
+  color: #000;
 }
