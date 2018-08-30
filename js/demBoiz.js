@@ -12,7 +12,7 @@ var demBoiz = [
     ]
   },
   {
-    "name": "Machiste",
+    "name": "Sol",
     "fbId": 666455808,
     "social": [
       {
@@ -22,7 +22,7 @@ var demBoiz = [
     ]
   },
   {
-    "name": "Uncle Greg",
+    "name": "Uncle Gerg",
     "fbId": 1363290225,
     "social": [
       {
@@ -32,12 +32,12 @@ var demBoiz = [
     ]
   },
   {
-    "name": "Coach",
-    "fbId": 705764484,
+    "name": "Matt",
+    "fbId": 713070099,
     "social": [
       {
         "site": "instagram",
-        "user": "ryan_pearsall64"
+        "user": "mmbayerr1"
       }
     ]
   },
@@ -62,12 +62,12 @@ var demBoiz = [
     ]
   },
   {
-    "name": "Nicktoria",
-    "fbId": 1235542852,
+    "name": "Armani Jon",
+    "fbId": 100013299765951,
     "social": [
       {
-        "site": "facebook",
-        "user": "nicholas.delplato"
+        "site": "instagram",
+        "user": "jon_farcc"
       }
     ]
   }
