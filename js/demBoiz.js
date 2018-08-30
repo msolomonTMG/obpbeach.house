@@ -59,7 +59,7 @@ var demBoiz = [
   {
     "name": "Blush",
     "fbId": 637890096,
-    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. To the right is his cousin, Chris. He hates this photo.",
+    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. Once took a photo with a statue of a dinosaur, but dont bring it up. He hates that photo.",
     "social": [
       {
         "site": "instagram",
