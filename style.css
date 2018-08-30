@@ -143,7 +143,7 @@ ul,ol         { list-style:none; }
 }
 
 .header_part{
-	background: url("http://www.tripbadger.com/wp-content/uploads/2012/09/fire-island-beach.jpg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
+	background: url("images/nashville.jpg") repeat scroll center center / cover  rgba(0, 0, 0, 0);
 	overflow: hidden;
 }
 .navbar-default {
@@ -303,7 +303,7 @@ ul,ol         { list-style:none; }
   outline-offset: -2px;
 }
 
-/* Guest Book Section 
+/* Guest Book Section
 =====================================================================*/
 .guest_book_section{
 	padding-bottom: 50px;
