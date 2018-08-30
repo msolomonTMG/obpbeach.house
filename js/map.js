@@ -47,7 +47,7 @@ function initMap() {
 function addPin(checkinData) {
   // the image of our markers
   var image = {
-    url: 'https://raw.githubusercontent.com/msolomonTMG/obpbeach.house/map/images/beachball-32.png',
+    url: 'https://raw.githubusercontent.com/msolomonTMG/obpbeach.house/gh-pages/images/Cowboyboot.png',
     size: new google.maps.Size(32, 32),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(0, 0)
