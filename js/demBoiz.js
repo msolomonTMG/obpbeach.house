@@ -26,7 +26,7 @@ var demBoiz = [
   {
     "name": "Uncle Gerg",
     "fbId": 1363290225,
-    "bio": "AKA Uncle Gerg. Not so secretly wishes Four Lokos would make a comeback. Really only here for new profile pictures.",
+    "bio": "AKA Gerg. Not so secretly wishes Four Lokos would make a comeback. Really only here for new profile pictures.",
     "social": [
       {
         "site": "twitter",
