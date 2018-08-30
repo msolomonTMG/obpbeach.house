@@ -4,7 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
-    "bio": "It'd be weird if i wrote my own",
+    "bio": "Relentlessly self involved. Chronically flatulent. Clincally depressed. Tombstone will most likely be a repost.",
     "social": [
       {
         "site": "instagram",
