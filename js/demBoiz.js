@@ -4,6 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
+    "bio": "It'd be weird if i wrote my own",
     "social": [
       {
         "site": "instagram",
@@ -14,6 +15,7 @@ var demBoiz = [
   {
     "name": "Sol",
     "fbId": 666455808,
+    "bio": "Hobbies include going to the hospital, and not doing things. Recently moved down the street. It almost killed him.",
     "social": [
       {
         "site": "instagram",
@@ -24,6 +26,7 @@ var demBoiz = [
   {
     "name": "Uncle Gerg",
     "fbId": 1363290225,
+    "bio": "AKA Uncle Gerg. Not so secretly wishes Four Lokos would make a comeback. Really only here for new profile pictures.",
     "social": [
       {
         "site": "twitter",
@@ -34,6 +37,7 @@ var demBoiz = [
   {
     "name": "Matt",
     "fbId": 713070099,
+    "bio": "Your garden variety 'hotel-manager turned business owner turned pilot turned physical therapist turned eletrical engineer' story. ",
     "social": [
       {
         "site": "instagram",
@@ -44,6 +48,7 @@ var demBoiz = [
   {
     "name": "Croxley",
     "fbId": 533712842,
+    "bio": "AKA 'Big House Cory'. Chances are, hes not enjoying a single minute of this trip. Anyway, here's Wonderwall.",
     "social": [
       {
         "site": "instagram",
@@ -54,6 +59,7 @@ var demBoiz = [
   {
     "name": "Blush",
     "fbId": 637890096,
+    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. To the right is his cousin, Chris. He hates this photo.",
     "social": [
       {
         "site": "instagram",
@@ -64,6 +70,7 @@ var demBoiz = [
   {
     "name": "Armani Jon",
     "fbId": 100013299765951,
+    "bio": "Really hates that we still call him Armani Jon. Really hates us in general. Thinks beer is made with broccoli. Idiot.",
     "social": [
       {
         "site": "instagram",
@@ -97,6 +104,7 @@ $(document).ready(function () {
           </div>\
           <h2>' + boi.name + '</h2>\
           <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
+        <p>' + boi.bio + ' </p>\
         </div>\
       </div>\
     ';
