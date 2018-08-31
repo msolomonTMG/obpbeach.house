@@ -4,7 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
-    "bio": "Relentlessly self involved. Chronically flatulent. Clinically depressed. Tombstone will most likely be a repost.",
+    "bio": "It'd be weird if i wrote my own",
     "social": [
       {
         "site": "instagram",
@@ -26,7 +26,7 @@ var demBoiz = [
   {
     "name": "Uncle Gerg",
     "fbId": 1363290225,
-    "bio": "AKA Gerg. Not so secretly wishes Four Lokos would make a comeback. Really only here for new profile pictures.",
+    "bio": "AKA  Gerg. Not so secretly wishes Four Lokos would make a comeback. Really only here for new profile pictures.",
     "social": [
       {
         "site": "twitter",
@@ -59,7 +59,7 @@ var demBoiz = [
   {
     "name": "Blush",
     "fbId": 637890096,
-    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. Once took a photo with a statue of a dinosaur, but dont bring it up. He hates that photo.",
+    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. To the right is his cousin, Chris. He hates this photo.",
     "social": [
       {
         "site": "instagram",
@@ -100,7 +100,7 @@ $(document).ready(function () {
       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">\
         <div class="welcome_part wow ' + animation + '">\
           <div class="welcome_icon">\
-             <a href="http://www.facebook.com/' + boi.fbId + '"><img class="img-circle" height="100%" width="100%" src="http://graph.facebook.com/v2.5/'+ boi.fbId +'/picture?height=200&width=200"></a>\
+             <a href="http://www.facebook.com/' + boi.fbId + '"><img class="img-circle" height="100%" width="100%" src="images/'+ boi.name +'.png"></a>\
           </div>\
           <h2>' + boi.name + '</h2>\
           <p><a href="//' + boi.social[0].site + '.com/' + boi.social[0].user + '"><i class="fa fa-' + boi.social[0].site + '"></i> ' + boi.social[0].user + '</a></p>\
