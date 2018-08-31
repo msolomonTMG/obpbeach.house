@@ -64,7 +64,7 @@ function addPin(checkinData) {
   });
 
   // create the marker pop up info
-  var popupHTML = '<div id="content"><div id="siteNotice"><h1>' + checkinData.title + '</h1><small>' + checkinData.createdDate + '</small></div><hr><div id="bodyContent"><p>' + checkinData.message + '</p></div></div>';
+  var popupHTML = '<div id="content"><div id="siteNotice"><h3>' + checkinData.title + '</h3><small>' + checkinData.createdDate + '</small></div><hr><div id="bodyContent"><p>' + checkinData.message + '</p></div></div>';
   var infowindow = new google.maps.InfoWindow({
     content: popupHTML
   });
