@@ -4,7 +4,7 @@ var demBoiz = [
   {
     "name": "Scooter",
     "fbId": 684792852,
-    "bio": "It'd be weird if i wrote my own",
+    "bio": "Relentlessly self-involved. Chronically flatulent. Clinically depressed. Tombstone will probably be a repost.",
     "social": [
       {
         "site": "instagram",
@@ -59,7 +59,7 @@ var demBoiz = [
   {
     "name": "Blush",
     "fbId": 637890096,
-    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. To the right is his cousin, Chris. He hates this photo.",
+    "bio": "Self-proclaimed GOAT. Self-proclaimed diabetic. Self-proclaims a lot. Once took a photo with a dinosaur statue. Don't bring it up to him. He hates that photo.",
     "social": [
       {
         "site": "instagram",
